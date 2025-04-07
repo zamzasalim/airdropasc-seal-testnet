@@ -80,7 +80,14 @@ function App() {
       </Flex>
 <Card style={{ marginBottom: '2rem' }}>
   <div style={{ textAlign: 'center' }}>
-    <h2 style={{ borderBottom: '2px solid #000', paddingBottom: '10px' }}><b>Community Team</b></h2>
+    <img 
+      src="https://github.com/user-attachments/assets/1aa6d82b-3b3c-4ecb-93f9-e6a29f5826ca"
+      width="100" 
+      style={{ marginBottom: '10px' }} // Memberikan jarak antara logo dan judul
+    />
+    <h2 style={{ borderBottom: '2px solid #000', paddingBottom: '10px' }}>
+      <b>Community Team</b>
+    </h2>
     <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <a href="https://www.airdropasc.com" target="_blank" style={{ margin: '0 10px' }}>
         <img src="https://github.com/user-attachments/assets/1aa6d82b-3b3c-4ecb-93f9-e6a29f5826ca" width="50" />
