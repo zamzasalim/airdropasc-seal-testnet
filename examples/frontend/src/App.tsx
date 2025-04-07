@@ -22,14 +22,19 @@ function LandingPage() {
       <Card>
         <Flex direction="column" gap="2" align="center" style={{ height: '100%' }}>
           <div style={{ textAlign: 'center' }}>
-            <h2>Allowlist Example</h2>
-            <p>
-              Shows how a creator can define an allowlist based access. The creator first creates an
-              allowlist and can add or remove users in the list. The creator can then associate
-              encrypted files to the allowlist. Only users in the allowlist have access to decrypt
-              the files.
-            </p>
+            <h2>TRY Allowlist</h2>
           </div>
+              <div style={{ textAlign: 'left' }}>
+      <h3>Tutorial</h3>
+      <p>1. Click 'Try it'</p>
+      <p>2. Create Your Name Allow List</p>
+      <p>3. Add New Sui Wallet</p>
+      <p>4. Select Walrus service</p>
+      <p>5. Upload file</p>
+      <p>6. Click 'First step: Encrypt and upload to Walrus'</p>
+      <p>7. Click 'Second step: Associate file to Sui object'</p>
+      <p>8. Done</p>
+    </div>
           <Link to="/allowlist-example">
             <Button size="3">Try it</Button>
           </Link>
@@ -38,16 +43,19 @@ function LandingPage() {
       <Card>
         <Flex direction="column" gap="2" align="center" style={{ height: '100%' }}>
           <div style={{ textAlign: 'center' }}>
-            <h2>Subscription Example</h2>
-            <p>
-              Shows how a creator can define a subscription based access to its published files. The
-              creator defines subcription fee and how long a subscription is valid for. The creator
-              can then associate encrypted files to the service. Only users who have purchased a
-              subscription (NFT) have access to decrypt the files, along with the condition that the
-              subscription must not have expired (i.e. the subscription creation timestamp plus the
-              TTL is smaller than the current clock time).
-            </p>
+            <h2>TRY Subscription</h2>
           </div>
+                        <div style={{ textAlign: 'left' }}>
+      <h3>Tutorial</h3>
+      <p>1. Click 'Try it'</p>
+      <p>2. Enter Price in Mist</p>
+      <p>3. Subscription duration in minutes</p>
+      <p>4. Name of the Service</p>
+      <p>5. Click Create Service</p>
+      <p>6. Click 'this link'</p>
+      <p>7. Click and Download Decrypt</p>
+      <p>8. Done</p>
+    </div>
           <Link to="/subscription-example">
             <Button size="3">Try it</Button>
           </Link>
@@ -64,30 +72,31 @@ function App() {
   return (
     <Container>
       <Flex position="sticky" px="4" py="2" justify="between">
-        <h1 className="text-4xl font-bold m-4 mb-8">Seal Example Apps</h1>
+        <h1 className="text-4xl font-bold m-4 mb-8">Sealsui Testnet By AIRDROP ASC</h1>
         {/* <p>TODO: add seal logo</p> */}
         <Box>
           <ConnectButton />
         </Box>
       </Flex>
-      <Card style={{ marginBottom: '2rem' }}>
-        <p>
-          1. Code is available{' '}
-          <a href="https://github.com/MystenLabs/seal/tree/main/examples">here</a>.
-        </p>
-        <p>
-          2. These examples are for Testnet only. Make sure you wallet is set to Testnet and has
-          some balance (can request from <a href="https://faucet.sui.io/">faucet.sui.io</a>).
-        </p>
-        <p>
-          3. Blobs are only stored on Walrus Testnet for 1 epoch by default, older files cannot be
-          retrieved even if you have access.
-        </p>
-        <p>
-          4. Currently only image files are supported, and the UI is minimal, designed for demo
-          purposes only!
-        </p>
-      </Card>
+<Card style={{ marginBottom: '2rem' }}>
+  <div style={{ textAlign: 'center' }}>
+    <h2><b>Community Team</b></h2>
+    <p>
+      <a href="https://www.airdropasc.com" target="_blank">
+        <img src="https://github.com/sipalingnode/sipalingnode/blob/main/logo.png" width="50" alt="Website" />
+      </a>&nbsp;&nbsp;&nbsp;
+      <a href="https://t.me/airdropasc" target="_blank">
+        <img src="https://github.com/user-attachments/assets/56e7f6ee-18b7-4b36-becc-ec6e4de7bff9" width="50" alt="Telegram" />
+      </a>&nbsp;&nbsp;&nbsp;
+      <a href="https://x.com/Autosultan_team" target="_blank">
+        <img src="https://github.com/user-attachments/assets/fbb43aa4-9652-4a49-b984-5cf032b6b1ac" width="50" alt="Twitter" />
+      </a>&nbsp;&nbsp;&nbsp;
+      <a href="https://www.youtube.com/@ZamzaSalim" target="_blank">
+        <img src="https://github.com/user-attachments/assets/c15509f9-acb7-49ce-989a-5bac62e7e549" width="50" alt="YouTube" />
+      </a>
+    </p>
+  </div>
+</Card>
       {currentAccount ? (
         <BrowserRouter>
           <Routes>
@@ -153,7 +162,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       ) : (
-        <p>Please connect your wallet to continue</p>
+        <p>Please connect your sui wallet to continue</p>
       )}
     </Container>
   );
